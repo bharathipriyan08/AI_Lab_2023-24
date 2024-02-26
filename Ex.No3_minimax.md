@@ -19,9 +19,10 @@ Write a mini-max search algorithm to find the optimal value of MAX Player from t
 
 
 import math
-
 def minimax(curDepth, nodeIndex, maxTurn, scores, targetDepth):
+
     # base case: targetDepth reached
+    
     if curDepth == targetDepth:
         return scores[nodeIndex]
     if maxTurn:
