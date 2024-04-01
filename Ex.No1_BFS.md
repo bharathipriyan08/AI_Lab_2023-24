@@ -1,6 +1,6 @@
 # Ex.No: 1  Implementation of Breadth First Search 
-### DATE: 14|02|2024                                                                            
-### REGISTER NUMBER : 212221040028
+### DATE:05.08.2003                                                                            
+### REGISTER NUMBER :212221060066 
 ### AIM: 
 To write a python program to implement Breadth first Search. 
 ### Algorithm:
@@ -15,49 +15,33 @@ To write a python program to implement Breadth first Search.
 ### Program:
 ```
 graph = {
-    '1': ['2', '3'],
-    '2': ['4', '5'],
-    '3': ['6','7'],
-    '4': [],
-    '5': [],
-    '6': [],
-    '7':[]
+'5' : ['3','7'],
+'3' : ['2', '4'],
+'7' : ['8'],
+'2' : [],
+'4' : ['8'],
+'8' : []
 }
-visited = []  # List for visited nodes.
-queue = []  # Initialize a queue
-
-
-def bfs(visited, graph, node):  # Function for BFS
-    visited.append(node)
-    queue.append(node)
-    while queue:  # Creating loop to visit each node
-        m = queue.pop(0)
-        print(m)
-        for neighbour in graph[m]:
-            if neighbour not in visited:
-                visited.append(neighbour)
-                queue.append(neighbour) 
-
-
+visited = [] # List for visited nodes.
+queue = [] #Initialize a queue
+def bfs(visited, graph, node): #function for BFS
+ visited.append(node)
+ queue.append(node)
+while queue: # Creating loop to visit each node
+ m = queue.pop(0)
+print (m, end = " ")
+for neighbour in graph[m]:
+ if neighbour not in visited:
+ visited.append(neighbour)
+ queue.append(neighbour)
 # Driver Code
 print("Following is the Breadth-First Search")
-bfs(visited, graph, '1')  # Function calling
+bfs(visited, graph, '5') # function calling
+
 ```
-
-
-
-
-
-
-
-
-
-
-
-
 ### Output:
-![Screenshot 2024-02-17 153725](https://github.com/dyanesh-100/AI_Lab_2023-24/assets/114641798/23ac9746-90fb-4a1f-941e-0459d06aca81)
 
+![image](https://github.com/Gopika-5/AI_Lab_2023-24/assets/147976522/c6deb42f-ffa0-4569-8c3f-022adffef114)
 
 
 ### Result:
