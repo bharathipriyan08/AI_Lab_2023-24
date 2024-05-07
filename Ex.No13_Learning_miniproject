@@ -1,21 +1,21 @@
-# Ex.No: 13 Learning – Use Supervised Learning  
-### DATE: 22/04/24  
-
-### REGISTER NUMBER : 212221040028
-### AIM: 
+Ex.No: 13 Learning – Use Supervised Learning
+DATE: 22/04/24
+REGISTER NUMBER : 212221040109
+AIM:
 To write a program to train the classifier for diabeties.
-###  Algorithm:
-Step 1: Load the diabetes dataset.<br>
-Step 2: Split the dataset into features (input) and target variable (output).<br>
-Step 3: Split the data into training and testing sets.<br>
-Step 4: Scale the features using StandardScaler.<br>
-Step 5: Train a neural network classifier on the training data.<br>
-Step 6: Evaluate the classifier's accuracy on both training and testing data.<br>
-Step 7: Create a function to predict diabetes based on user input.<br>
-Step 8: Launch a Gradio interface for users to input their data and get a prediction.<br>
-Step 9: Stop the program.<br>
-### Program:
-```py
+
+Algorithm:
+Step 1: Load the diabetes dataset.
+Step 2: Split the dataset into features (input) and target variable (output).
+Step 3: Split the data into training and testing sets.
+Step 4: Scale the features using StandardScaler.
+Step 5: Train a neural network classifier on the training data.
+Step 6: Evaluate the classifier's accuracy on both training and testing data.
+Step 7: Create a function to predict diabetes based on user input.
+Step 8: Launch a Gradio interface for users to input their data and get a prediction.
+Step 9: Stop the program.
+
+Program:
 #import packages
 import numpy as np
 import pandas as pd
@@ -55,13 +55,8 @@ def diabetes(Pregnancies, Glucose, Blood_Pressure, SkinThickness, Insulin, BMI,D
 outputs = gr.Textbox()
 app = gr.Interface(fn=diabetes, inputs=['number','number','number','number','number','number','number','number'], outputs=outputs,description="Detection of Diabeties")
 app.launch(share=True)
+Output:
+image
 
-```
-
-
-### Output:
-![image](https://github.com/nagaraj6618/AI_Lab_2023-24/assets/127173574/bb5b23d7-7192-474e-b0cc-06018e21da30)
-
-
-### Result:
+Result:
 Thus the system was trained successfully and the prediction was carried out.
